@@ -32,7 +32,7 @@
 ![GitHub Activity Graph](https://activity-graph.herokuapp.com/graph?username=DestaFauzi&theme=github-dark)
 
 ## 🐍 Contribution Snake
-![Snake animation](https://github.com/DestaFauzi/DestaFauzi/blob/output/github-contribution-grid-snake.svg)
+![Snake animation](https://github.com/DestaFauzi/blob/output/github-contribution-grid-snake.svg)
 
 ## 💼 Current Projects
 - 🔒 [Cybersecurity Dashboard](https://github.com/DestaFauzi/network_attack_v2) - Network Attack Classification and Identification Web Based
