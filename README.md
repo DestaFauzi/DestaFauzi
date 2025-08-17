@@ -25,14 +25,6 @@
 ## 💻 Most Used Languages
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=DestaFauzi&layout=compact&theme=dark)
 
-## 🏆 GitHub Trophies
-![GitHub Trophies](https://github-profile-trophy.vercel.app/?username=DestaFauzi&theme=darkhub)
-
-## 📈 Activity Graph
-![GitHub Activity Graph](https://activity-graph.herokuapp.com/graph?username=DestaFauzi&theme=github-dark)
-
-## 🐍 Contribution Snake
-![Snake animation](https://github.com/DestaFauzi/blob/output/github-contribution-grid-snake.svg)
 
 ## 💼 Current Projects
 - 🔒 [Cybersecurity Dashboard](https://github.com/DestaFauzi/network_attack_v2) - Network Attack Classification and Identification Web Based
