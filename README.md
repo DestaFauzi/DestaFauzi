@@ -3,7 +3,7 @@
 ## 🚀 About Me
 - 🔭 I'm currently working as a **Cybersecurity Engineer, System Analysis, and Quality Assurance Engineer**
 - 🌱 I'm currently learning **Flask, Laravel, Machine Learning**
-- 👯 I'm looking to collaborate on **Cybersecurity and Web Development**
+- 👯 I'm looking to collaborate on **Cybersecurity and Software Development**
 - 💬 Ask me about **Python, Network Security, QA Testing**
 - 📫 How to reach me: **destafauzi279@gmail.com**
 - ⚡ Fun fact: **I love solving complex security challenges**
