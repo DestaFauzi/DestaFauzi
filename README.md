@@ -1,7 +1,7 @@
 # Hi there 👋, I'm Desta Fauzi Hariyanto
 
 ## 🚀 About Me
-- 🔭 I'm currently working as a **Cybersecurity Engineer, System Analysis, and Quality Assurance Engineer**
+- 🔭 I'm currently working as a **Software Developer, Cybersecurity Engineer, System Analysis, and Quality Assurance Engineer**
 - 🌱 I'm currently learning **Flask, Laravel, Machine Learning**
 - 👯 I'm looking to collaborate on **Cybersecurity and Software Development**
 - 💬 Ask me about **Python, Network Security, QA Testing**
