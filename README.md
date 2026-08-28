@@ -19,7 +19,7 @@
 | 🟫 Backend | Laravel · PHP · Golang · FastAPI |
 | 🟩 Frontend | Vue.js · React.js |
 | 📱 Mobile | Android · iOS |
-| 🧠 AI/ML | Random Forest · RAG · Vector DB (Qdrant) |
+| 🧠 AI/ML | Machine Learning · RAG · N8N Automation |
 | ⚙️ Infra | Docker · GitLab CI · GCP/AWS/Cloudflare |
 
 ---
