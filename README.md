@@ -16,8 +16,8 @@
 
 | Slot | Item |
 |---|---|
-| 🟫 Backend | Laravel · PHP · Golang |
-| 🟩 Frontend | Vue.js · JavaScript |
+| 🟫 Backend | Laravel · PHP · Golang · FastAPI |
+| 🟩 Frontend | Vue.js · React.js |
 | 📱 Mobile | Android · iOS |
 | 🧠 AI/ML | Random Forest · RAG · Vector DB (Qdrant) |
 | ⚙️ Infra | Docker · GitLab CI · GCP/AWS/Cloudflare |
