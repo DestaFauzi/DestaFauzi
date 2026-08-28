@@ -23,37 +23,25 @@
   <br/>
 
   <!-- Minecraft Crafting Table UI -->
-  <table width="100%">
-    <tr align="center">
-      <td align="center" width="48%">
-        <table border="1" style="border-collapse: collapse; text-align: center; background-color: #1c1c1c; border-color: #333; margin: auto;">
-          <tr>
-            <td width="90" height="90">⛏️<br/><small><b>Sys Design</b><br/>(Diamond Pickaxe)</small></td>
-            <td width="90" height="90">🔩<br/><small><b>Full-Stack</b><br/>(Iron Ingot)</small></td>
-            <td width="90" height="90"></td>
-          </tr>
-          <tr>
-            <td width="90" height="90">🔴<br/><small><b>Applied ML</b><br/>(Redstone)</small></td>
-            <td width="90" height="90">🔮<br/><small><b>Infra</b><br/>(Ender Pearl)</small></td>
-            <td width="90" height="90"></td>
-          </tr>
-          <tr>
-            <td width="90" height="90"></td>
-            <td width="90" height="90"></td>
-            <td width="90" height="90"></td>
-          </tr>
-        </table>
+  <table width="100%" border="1" style="border-collapse: collapse; text-align: center; background-color: #1c1c1c; border-color: #333;">
+    <tr>
+      <td width="26%" height="90" align="center">⛏️<br/><small><b>Sys Design</b><br/>(Diamond Pickaxe)</small></td>
+      <td width="26%" height="90" align="center">🔩<br/><small><b>Full-Stack</b><br/>(Iron Ingot)</small></td>
+      <td width="26%" height="90" align="center">📱<br/><small><b>Mobile</b><br/>(Gold Ingot)</small></td>
+      <td rowspan="3" width="8%" align="center" style="font-size: 32px; background-color: #161616; border-color: #333;">➡️</td>
+      <td rowspan="3" width="14%" align="center" style="background-color: #242b35; border: 2px solid #52baff;">
+        🧑‍💻<br/><b>System Analyst</b><br/><small style="color: #a9ff1c;"><i>(spawned!)</i></small>
       </td>
-      <td align="center" width="8%" style="font-size: 32px; text-align: center;">➡️</td>
-      <td align="center" width="44%">
-        <table border="1" style="border-collapse: collapse; text-align: center; background-color: #2a2a2a; border-color: #52baff; border-width: 2px; margin: auto;">
-          <tr>
-            <td width="120" height="120">
-              🧑‍💻<br/><b>System Analyst</b><br/>(spawned!)
-            </td>
-          </tr>
-        </table>
-      </td>
+    </tr>
+    <tr>
+      <td width="26%" height="90" align="center">🔴<br/><small><b>Applied ML</b><br/>(Redstone)</small></td>
+      <td width="26%" height="90" align="center">🔮<br/><small><b>Infra</b><br/>(Ender Pearl)</small></td>
+      <td width="26%" height="90" align="center">🛡️<br/><small><b>Cybersec</b><br/>(Shield)</small></td>
+    </tr>
+    <tr>
+      <td width="26%" height="90" align="center">🧠<br/><small><b>AI / RAG</b><br/>(Enchanted Book)</small></td>
+      <td width="26%" height="90" align="center">⚡<br/><small><b>Automation</b><br/>(Redstone Torch)</small></td>
+      <td width="26%" height="90" align="center">🗄️<br/><small><b>Database</b><br/>(Obsidian)</small></td>
     </tr>
   </table>
 
