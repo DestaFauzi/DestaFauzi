@@ -1,4 +1,10 @@
-<h1 align="center">👋 Hello! I'm Desta Fauzi Hariyanto</h1>
+<div align="center">
+
+# ⛏️ DestaFauzi.exe
+
+```
+[■■■■■■■■■■] Loading world... 100%
+```
 <h3 align="center">A Versatile Tech Professional: Software Developer, Cybersecurity Engineer & System Analyst </h3>
 
 ---
