@@ -22,6 +22,25 @@ I am a highly motivated and versatile professional dedicated to building secure,
 
 ---
 
+<details>
+<summary>🗺️ <b>Open Crafting Recipe — Capabilities</b> (click to expand)</summary>
+<br>
+
+```
+Diamond Pickaxe of System Design
++ Iron Ingot of Full-Stack Delivery
++ Redstone of Applied ML
++ Ender Pearl of Infra Ownership
+= One System Analyst
+```
+
+- **System design first** — plan the build before placing the first block
+- **Full-stack delivery** — mine, craft, and place: DB to API to UI
+- **Applied ML** — no leaked answers hidden in the preprocessing chest
+- **Infra-aware** — owns the server, not just what runs on it
+
+</details>
+
 ## 🛠️ Technical Toolkit
 
 My technical stack is diverse, enabling me to handle various aspects of development and security.
