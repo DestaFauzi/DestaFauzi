@@ -79,12 +79,12 @@
 ### 📊 Stats & Discoveries
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=DestaFauzi&show_icons=true&title_color=52baff&icon_color=a9ff1c&text_color=ffffff&bg_color=181818&border_color=333333&hide_border=false" alt="GitHub Stats" width="48%" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=DestaFauzi&layout=compact&title_color=52baff&icon_color=a9ff1c&text_color=ffffff&bg_color=181818&border_color=333333&hide_border=false" alt="Top Languages" width="48%" />
+  <img src="https://github-stats-extended.vercel.app/api?username=DestaFauzi&show_icons=true&title_color=52baff&icon_color=a9ff1c&text_color=ffffff&bg_color=181818&border_color=333333&hide_border=false" alt="GitHub Stats" width="48%" />
+  <img src="https://github-stats-extended.vercel.app/api/top-langs/?username=DestaFauzi&layout=compact&title_color=52baff&icon_color=a9ff1c&text_color=ffffff&bg_color=181818&border_color=333333&hide_border=false" alt="Top Languages" width="48%" />
 </p>
 
 <p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=DestaFauzi&theme=dark&background=181818&ring=52baff&fire=a9ff1c&currStreakNum=ffffff&sideNums=ffffff&sideLabels=ffffff&dates=ffffff" alt="GitHub Streak" width="98%" />
+  <img src="https://streak-stats.demolab.com/?user=DestaFauzi&theme=dark&background=181818&ring=52baff&fire=a9ff1c&currStreakNum=ffffff&sideNums=ffffff&sideLabels=ffffff&dates=ffffff" alt="GitHub Streak" width="98%" />
 </p>
 
 ---
@@ -94,7 +94,7 @@
 💬 *Feel free to connect or invite me to your server/project!*
 
 * **IP / LinkedIn:** [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/destafauzi)
-* **Email:** [![Email](https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:destafauzi@example.com)
+* **Email:** [![Email](https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:destafauzi279@gmail.com)
 
 <br/>
 
