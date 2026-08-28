@@ -23,10 +23,10 @@
   <br/>
 
   <!-- Minecraft Crafting Table UI -->
-  <table border="0">
-    <tr>
-      <td>
-        <table border="1" style="border-collapse: collapse; text-align: center; background-color: #1c1c1c; border-color: #333;">
+  <table width="100%">
+    <tr align="center">
+      <td align="center" width="48%">
+        <table border="1" style="border-collapse: collapse; text-align: center; background-color: #1c1c1c; border-color: #333; margin: auto;">
           <tr>
             <td width="90" height="90">⛏️<br/><small><b>Sys Design</b><br/>(Diamond Pickaxe)</small></td>
             <td width="90" height="90">🔩<br/><small><b>Full-Stack</b><br/>(Iron Ingot)</small></td>
@@ -44,11 +44,11 @@
           </tr>
         </table>
       </td>
-      <td style="font-size: 32px; padding: 0 20px;">➡️</td>
-      <td>
-        <table border="1" style="border-collapse: collapse; text-align: center; background-color: #2a2a2a; border-color: #52baff; border-width: 2px;">
+      <td align="center" width="8%" style="font-size: 32px; text-align: center;">➡️</td>
+      <td align="center" width="44%">
+        <table border="1" style="border-collapse: collapse; text-align: center; background-color: #2a2a2a; border-color: #52baff; border-width: 2px; margin: auto;">
           <tr>
-            <td width="110" height="110">
+            <td width="120" height="120">
               🧑‍💻<br/><b>System Analyst</b><br/>(spawned!)
             </td>
           </tr>
