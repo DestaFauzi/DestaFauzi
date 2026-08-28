@@ -1,75 +1,132 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200" width="100%" height="200" style="border: 2px solid #333; border-radius: 8px;">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200" width="100%" height="200" style="background-color: #000000; border-radius: 8px;">
   <style>
-    @keyframes fillProgress {
-      0% { width: 0px; }
-      5% { width: 0px; }
-      10% { width: 100px; }
-      16% { width: 220px; }
-      23% { width: 350px; }
-      30% { width: 440px; }
-      35% { width: 492px; }
-      92% { width: 492px; }
-      100% { width: 0px; }
-    }
-    @keyframes pct0 { 0%, 9% { opacity: 1; } 10%, 100% { opacity: 0; } }
-    @keyframes pct20 { 0%, 9% { opacity: 0; } 10%, 15% { opacity: 1; } 16%, 100% { opacity: 0; } }
-    @keyframes pct40 { 0%, 15% { opacity: 0; } 16%, 22% { opacity: 1; } 23%, 100% { opacity: 0; } }
-    @keyframes pct60 { 0%, 22% { opacity: 0; } 23%, 29% { opacity: 1; } 30%, 100% { opacity: 0; } }
-    @keyframes pct80 { 0%, 29% { opacity: 0; } 30%, 34% { opacity: 1; } 35%, 100% { opacity: 0; } }
-    @keyframes pct100 { 0%, 34% { opacity: 0; } 35%, 92% { opacity: 1; } 93%, 100% { opacity: 0; } }
-
-    @keyframes textFade {
-      0%, 34% { opacity: 0; transform: translateY(5px); }
-      40%, 92% { opacity: 1; transform: translateY(0); }
-      95%, 100% { opacity: 0; transform: translateY(-5px); }
+    /* Pac-Man mouth animation */
+    @keyframes mouth {
+      0%, 100% { d: path("M 20 20 L 37.32 10 A 20 20 0 1 0 37.32 30 Z"); }
+      50% { d: path("M 20 20 L 40 20 A 20 20 0 1 0 40 20.01 Z"); }
     }
 
-    .bg { fill: #181818; }
-    .text-title { font-family: 'Courier New', Courier, monospace; font-size: 22px; font-weight: bold; fill: #A9FF1C; }
-    .text-body { font-family: 'Courier New', Courier, monospace; font-size: 15px; fill: #FFFFFF; }
-    .text-accent { font-family: 'Courier New', Courier, monospace; font-size: 16px; fill: #52BAFF; font-weight: bold; }
-    
-    .bar-fill {
-      animation: fillProgress 6s infinite ease-in-out;
+    /* Move Pac-Man and Ghost across the screen */
+    @keyframes movePacman {
+      0% { transform: translate(-50px, 80px); }
+      100% { transform: translate(850px, 80px); }
     }
-    
-    .p0 { animation: pct0 6s infinite; }
-    .p20 { animation: pct20 6s infinite; }
-    .p40 { animation: pct40 6s infinite; }
-    .p60 { animation: pct60 6s infinite; }
-    .p80 { animation: pct80 6s infinite; }
-    .p100 { animation: pct100 6s infinite; }
-    
-    .spawn-info {
-      animation: textFade 6s infinite ease-out;
+    @keyframes moveGhost {
+      0% { transform: translate(-120px, 80px); }
+      100% { transform: translate(780px, 80px); }
+    }
+
+    /* Dot disappearing keyframes */
+    @keyframes dot1 { 0%, 18% { opacity: 1; } 19%, 100% { opacity: 0; } }
+    @keyframes dot2 { 0%, 31% { opacity: 1; } 32%, 100% { opacity: 0; } }
+    @keyframes dot3 { 0%, 43% { opacity: 1; } 44%, 100% { opacity: 0; } }
+    @keyframes dot4 { 0%, 56% { opacity: 1; } 57%, 100% { opacity: 0; } }
+    @keyframes dot5 { 0%, 68% { opacity: 1; } 69%, 100% { opacity: 0; } }
+    @keyframes dot6 { 0%, 81% { opacity: 1; } 82%, 100% { opacity: 0; } }
+    @keyframes dot7 { 0%, 93% { opacity: 1; } 94%, 100% { opacity: 0; } }
+
+    /* Score increment keyframes */
+    @keyframes s0 { 0%, 18% { opacity: 1; } 19%, 100% { opacity: 0; } }
+    @keyframes s10 { 0%, 18% { opacity: 0; } 19%, 31% { opacity: 1; } 32%, 100% { opacity: 0; } }
+    @keyframes s20 { 0%, 31% { opacity: 0; } 32%, 43% { opacity: 1; } 44%, 100% { opacity: 0; } }
+    @keyframes s30 { 0%, 43% { opacity: 0; } 44%, 56% { opacity: 1; } 57%, 100% { opacity: 0; } }
+    @keyframes s40 { 0%, 56% { opacity: 0; } 57%, 68% { opacity: 1; } 69%, 100% { opacity: 0; } }
+    @keyframes s50 { 0%, 68% { opacity: 0; } 69%, 81% { opacity: 1; } 82%, 100% { opacity: 0; } }
+    @keyframes s60 { 0%, 81% { opacity: 0; } 82%, 93% { opacity: 1; } 94%, 100% { opacity: 0; } }
+    @keyframes s70 { 0%, 93% { opacity: 0; } 94%, 100% { opacity: 1; } }
+
+    /* Flashing game UI text */
+    @keyframes flash {
+      50% { opacity: 0; }
+    }
+
+    .pacman-body {
+      fill: #FFD700;
+      animation: mouth 0.25s infinite ease-in-out;
+    }
+    .pacman-group {
+      animation: movePacman 6s infinite linear;
+    }
+    .ghost-group {
+      animation: moveGhost 6s infinite linear;
+    }
+
+    .d1 { animation: dot1 6s infinite step-end; }
+    .d2 { animation: dot2 6s infinite step-end; }
+    .d3 { animation: dot3 6s infinite step-end; }
+    .d4 { animation: dot4 6s infinite step-end; }
+    .d5 { animation: dot5 6s infinite step-end; }
+    .d6 { animation: dot6 6s infinite step-end; }
+    .d7 { animation: dot7 6s infinite step-end; }
+
+    .sc0 { animation: s0 6s infinite step-end; }
+    .sc10 { animation: s10 6s infinite step-end; }
+    .sc20 { animation: s20 6s infinite step-end; }
+    .sc30 { animation: s30 6s infinite step-end; }
+    .sc40 { animation: s40 6s infinite step-end; }
+    .sc50 { animation: s50 6s infinite step-end; }
+    .sc60 { animation: s60 6s infinite step-end; }
+    .sc70 { animation: s70 6s infinite step-end; }
+
+    .one-up {
+      animation: flash 0.8s infinite step-end;
+    }
+
+    .retro-text {
+      font-family: 'Courier New', Courier, monospace;
+      font-weight: bold;
     }
   </style>
 
-  <!-- Background -->
-  <rect width="100%" height="100%" class="bg" />
+  <!-- Maze Border (Retro Blue) -->
+  <rect x="5" y="5" width="790" height="190" rx="10" fill="none" stroke="#2121de" stroke-width="4" />
+  <rect x="12" y="12" width="776" height="176" rx="6" fill="none" stroke="#2121de" stroke-width="2" />
 
-  <!-- Title -->
-  <text x="30" y="55" class="text-title">⛏️ DestaFauzi.exe</text>
-
-  <!-- Progress Bar Container -->
-  <rect x="30" y="80" width="500" height="24" rx="4" fill="#252630" stroke="#3e4053" stroke-width="2" />
+  <!-- Game UI Header -->
+  <text x="35" y="45" fill="#FFD700" class="retro-text" font-size="22">⛏️ DestaFauzi.exe</text>
   
-  <!-- Progress Bar Fill -->
-  <rect x="34" y="84" height="16" rx="2" fill="#52BAFF" class="bar-fill" />
-
-  <!-- Progress Percentages -->
-  <g class="text-body">
-    <text x="545" y="97" class="p0">[          ] Loading world... 0%</text>
-    <text x="545" y="97" class="p20" style="opacity: 0;">[■■        ] Loading world... 20%</text>
-    <text x="545" y="97" class="p40" style="opacity: 0;">[■■■■      ] Loading world... 40%</text>
-    <text x="545" y="97" class="p60" style="opacity: 0;">[■■■■■■    ] Loading world... 60%</text>
-    <text x="545" y="97" class="p80" style="opacity: 0;">[■■■■■■■■  ] Loading world... 80%</text>
-    <text x="545" y="97" class="p100" style="opacity: 0;">[■■■■■■■■■■] Loaded world! 100%</text>
+  <text x="680" y="38" fill="#FF0000" class="retro-text one-up" font-size="16">1UP</text>
+  <!-- Score Counter (animated) -->
+  <g fill="#FFFFFF" class="retro-text" font-size="16">
+    <text x="680" y="58" class="sc0">00000</text>
+    <text x="680" y="58" class="sc10" style="opacity: 0;">00010</text>
+    <text x="680" y="58" class="sc20" style="opacity: 0;">00020</text>
+    <text x="680" y="58" class="sc30" style="opacity: 0;">00030</text>
+    <text x="680" y="58" class="sc40" style="opacity: 0;">00040</text>
+    <text x="680" y="58" class="sc50" style="opacity: 0;">00050</text>
+    <text x="680" y="58" class="sc60" style="opacity: 0;">00060</text>
+    <text x="680" y="58" class="sc70" style="opacity: 0;">00070</text>
   </g>
 
-  <!-- Spawn Info -->
-  <g class="spawn-info">
-    <text x="30" y="145" class="text-accent">System Analyst &amp; Full-Stack Developer</text>
-    <text x="30" y="170" class="text-body" style="fill: #B0B0B0;">spawned at <tspan fill="#A9FF1C" font-weight="bold">Kodegiri</tspan> / <tspan fill="#A9FF1C" font-weight="bold">STAR Group</tspan></text>
+  <!-- Food Dots -->
+  <g>
+    <circle cx="100" cy="100" r="4" fill="#ffb8ae" class="d1" />
+    <circle cx="200" cy="100" r="4" fill="#ffb8ae" class="d2" />
+    <circle cx="300" cy="100" r="4" fill="#ffb8ae" class="d3" />
+    <circle cx="400" cy="100" r="4" fill="#ffb8ae" class="d4" />
+    <circle cx="500" cy="100" r="4" fill="#ffb8ae" class="d5" />
+    <circle cx="600" cy="100" r="4" fill="#ffb8ae" class="d6" />
+    <circle cx="700" cy="100" r="4" fill="#ffb8ae" class="d7" />
   </g>
+
+  <!-- Animated Pac-Man -->
+  <g class="pacman-group">
+    <path class="pacman-body" d="M 20 20 L 37.32 10 A 20 20 0 1 0 37.32 30 Z" />
+  </g>
+
+  <!-- Animated Ghost (Blinky - Red) -->
+  <g class="ghost-group">
+    <!-- Ghost Body -->
+    <path fill="#FF0000" d="M 5 30 L 5 15 A 15 15 0 0 1 35 15 L 35 30 L 31 26 L 27 30 L 23 26 L 19 30 L 15 26 L 11 30 L 7 26 Z" />
+    <!-- Ghost Eyes (White) -->
+    <circle cx="14" cy="15" r="4" fill="#FFFFFF" />
+    <circle cx="26" cy="15" r="4" fill="#FFFFFF" />
+    <!-- Ghost Pupils (Blue looking left) -->
+    <circle cx="12" cy="15" r="2" fill="#0000FF" />
+    <circle cx="24" cy="15" r="2" fill="#0000FF" />
+  </g>
+
+  <!-- Level Spawn Info Text -->
+  <text x="35" y="145" fill="#00FF00" class="retro-text" font-size="16">System Analyst &amp; Full-Stack Developer</text>
+  <text x="35" y="170" fill="#FFFFFF" class="retro-text" font-size="14">spawned at Kodegiri / STAR Group</text>
 </svg>
